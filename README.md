@@ -30,14 +30,14 @@ The official metric for DrivenData was R2(coefficient of determination); however
 #### Best Validation model is : 
 with 94 features.
 
-1. R^2 :
+1. R-Square :
 2. MSE :
 3. RMSE :
 
 
 #### Testing
 
-1. R^2 :
+1. R-Square :
 2. MSE :
 3. RMSE :
 
