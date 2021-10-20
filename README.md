@@ -52,3 +52,14 @@ with 94 features.
 # Communication
 
 In addition to the slides and visuals presented. A website using Heroku will be provided for deployment. `Soon`
+
+# Insights and Recommendations
+
+1. Waterfront living is key, with the median house price for a house with a waterfront view being almost double that of one that does not have this feature.
+2. following neighbourhoods: Medina, Clyde Hill and Bellevue (the most expensive neighbourhoods).
+3. Location within King County is important with a noticeable disparity amongst zipcodes.
+4. House prices do not appear to be affected by sale month or quarter, with the median house price being almost constant throughout the year.
+5. April and May are the most popular months for sales. In contrast, January and February have the lowest sales. Q2 alone accounts for 31.3% of sales.
+
+
+
