@@ -11,19 +11,44 @@ For this study, we collected data from the website named “Kaggle”-(https://w
 
 The dataset used in this project contains house sale prices for King County, which includes Seattle. It includes homes sold between May 2014 and May 2015.The dataset consisted of 21 variables and 21613 observations.
 
-Here's a brief description of some of the features in the dataset:
+# Algorithms
 
-•	Price: the property's sale price in dollars. This is the target variable that we're trying to predict.
-•	bedrooms:  Number of bedrooms in the house
-•	bathrooms:  Number of bathrooms in the house
-•	sqft_living: House size in square feet
-•	sqft_lot: Lot size in square feet
-•	floors: Number of floors 
-•	waterfront: If there is a waterfront (0 or 1)
-•	view: Number of views
-•	yr_built: Original construction date 
-•	yr_renovated: Remodel date
-•	condition: Condition of sale (scale 1 to 5)
-•	grade: grade of the house
-•	sqft_above: House size above basement in square feet
-•	sqft_basement: basement size in square feet
+### Feature Engineering
+
+1. Mapping Zipcode, latitide and longitude to create a new variable `Neighbourhoods` to provide more accurate results and prediction
+2. Converting categorical features to binary dummy variables.
+3. Extracting and adding two features, `monthly sales` and `quarterly sales` to explort the best time of the year to sell.
+
+### Models
+various Regression techniques like linear regression, random forest regression, AdaBoostregression, Decision tree are used to predict the house price. hyper-parameter is used in machine learning model to better guide the creation of the parameters which the models use to generate predictions on data. not to mention using cross validition in this part for more accurate results.
+
+### Model Evaluation and Selection
+evaluation metrics are a measure of how good a model performs and how well it approximates the relationship. we will consider the most famous metrics which are MSE, R-squared, and RMSE. The entire training dataset of 12,280 records is used to train the model which represent 60% of the date. 20% of the data is used to validate the training. Finally, Predictions on the 20% holdout were limited to the very end, so this split was only used and scores seen just once.
+
+The official metric for DrivenData was R2(coefficient of determination); however, MSE and RMSE were included to provide a more useful real-world meaning.
+
+#### Best Validation model is : 
+with 94 features.
+
+1. R^2 :
+2. MSE :
+3. RMSE :
+
+
+#### Testing
+
+1. R^2 :
+2. MSE :
+3. RMSE :
+
+# Tools
+
+* Numpy and Pandas for data manipulation.
+* Scikit-learn for modeling.
+* Matplotlib and Seaborn for plotting.
+* Geopandas and geocoders to create maps and feature engineering.
+* Bing API to obtain addresses.
+
+# Communication
+
+In addition to the slides and visuals presented. A website using Heroku will be provided for deployment. `Soon`
